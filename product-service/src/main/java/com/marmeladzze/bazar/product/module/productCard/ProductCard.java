@@ -16,7 +16,7 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@SequenceGenerator(name = "id_generator", sequenceName = "product_card_seq", allocationSize = 50)
+@SequenceGenerator(name = "id_generator", sequenceName = "product_card_seq")
 public class ProductCard extends UpdatableBaseEntity {
 
     @Column(name = "title")
