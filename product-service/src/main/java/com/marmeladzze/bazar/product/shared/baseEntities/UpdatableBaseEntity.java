@@ -11,7 +11,6 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.Instant;
 
-@Entity
 @MappedSuperclass
 @SuperBuilder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
