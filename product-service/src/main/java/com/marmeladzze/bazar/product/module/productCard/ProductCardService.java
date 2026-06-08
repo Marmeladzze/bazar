@@ -43,4 +43,12 @@ public class ProductCardService {
 
         return entityPage.map(ProductCardResponseDto::fromEntity);
     }
+
+
+
+    public ProductCardResponseDto getById(Long productCardId) {
+        ProductCard productCard = productCardRepository.findById(productCardId)
+                .orElseThrow(() -> new NotFoundException("Tovara netu ji est balya"));
+        return ProductCardResponseDto.fromEntity(productCard);
+    }
 }
